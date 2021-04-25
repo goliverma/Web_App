@@ -1,0 +1,46 @@
+@model IEnumerable<MoviesDisplayModel>
+
+    <h1>Movies List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Photo
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Options
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.movname
+                    </td>
+                    <td>
+                        <img src="~/Images/@item.Photo" width="400" height="400" />
+                    </td>
+                    <td>
+                        @item.Price
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="Movies" asp-action="Detail" asp-route-id="@item.Id">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

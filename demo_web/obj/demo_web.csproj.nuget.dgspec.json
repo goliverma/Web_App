@@ -1,0 +1,145 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/goli/Desktop/demo/demo_web/demo_web.csproj": {}
+  },
+  "projects": {
+    "/home/goli/Desktop/demo/demo_models/demo_models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/goli/Desktop/demo/demo_models/demo_models.csproj",
+        "projectName": "demo_models",
+        "projectPath": "/home/goli/Desktop/demo/demo_models/demo_models.csproj",
+        "packagesPath": "/home/goli/.nuget/packages/",
+        "outputPath": "/home/goli/Desktop/demo/demo_models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/goli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/goli/Desktop/demo/demo_web/demo_web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/goli/Desktop/demo/demo_web/demo_web.csproj",
+        "projectName": "demo_web",
+        "projectPath": "/home/goli/Desktop/demo/demo_web/demo_web.csproj",
+        "packagesPath": "/home/goli/.nuget/packages/",
+        "outputPath": "/home/goli/Desktop/demo/demo_web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/goli/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/goli/Desktop/demo/demo_models/demo_models.csproj": {
+                "projectPath": "/home/goli/Desktop/demo/demo_models/demo_models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

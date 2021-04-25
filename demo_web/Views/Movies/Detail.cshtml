@@ -1,0 +1,88 @@
+@using Microsoft.AspNetCore.Http;
+@model MoviesDisplayModel
+
+<h1>Movies Deatils</h1>
+
+<a class="btn btn-outline-primary" asp-controller="Movies" asp-action="GetAction" >Back</a>
+
+<script>
+    $(function () {
+        $("#rateYo").rateYo({
+            rating: 0,
+            numStars: 5,
+            maxValue: 5,
+            halfStars: true,
+            onChange: function(rating, rateYoInstance){
+                $('#rating').val(rating);
+            }
+        });
+    });
+</script>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>@Model.Id</td>
+            <td>Name</td>
+            <td>@Model.movname</td>
+            <td>Photo</td>
+            <td>
+                <img src="~/Images/@Model.Photo" width="400" height="400" />
+            </td>
+            <td>Price</td>
+            <td>@Model.Price</td>
+        </tr>
+    </thead>
+</table>
+
+<h3>
+    Rating and Comments
+</h3>
+
+<table>
+    @foreach (var item in Model.reviews)
+    {
+        <tr>
+            <td>@item.account.username</td>
+        </tr>
+    }
+</table>
+
+@if (Context.Session.GetString("UserName") == null )
+{
+    <span>
+        <a  asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary">Login to post your comments</a>
+    </span>
+}
+else
+{
+    @using (Html.BeginForm("SendReview","Movies", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td valign="top">
+                    Rating
+                </td>
+                <td>
+                    <div id="rateYo"></div>
+                    <input type="hidden" id="rating" name="rating"/>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    Content
+                </td>
+                <td>
+                    @Html.TextAreaFor(Model => Model.review.Content,new {cols = 20, rows= 5})
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="btn btn-submit" type="submit" value="Send" /></td>
+                <input type="hidden" name="moviid" value="@Model.Id" />
+            </tr>
+        </table>
+    }
+}
+

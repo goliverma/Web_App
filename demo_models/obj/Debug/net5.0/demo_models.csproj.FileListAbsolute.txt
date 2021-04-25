@@ -1,0 +1,12 @@
+/home/goli/Desktop/demo/demo_models/bin/Debug/net5.0/demo_models.deps.json
+/home/goli/Desktop/demo/demo_models/bin/Debug/net5.0/demo_models.dll
+/home/goli/Desktop/demo/demo_models/bin/Debug/net5.0/ref/demo_models.dll
+/home/goli/Desktop/demo/demo_models/bin/Debug/net5.0/demo_models.pdb
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.csprojAssemblyReference.cache
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.GeneratedMSBuildEditorConfig.editorconfig
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.AssemblyInfoInputs.cache
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.AssemblyInfo.cs
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.csproj.CoreCompileInputs.cache
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.dll
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/ref/demo_models.dll
+/home/goli/Desktop/demo/demo_models/obj/Debug/net5.0/demo_models.pdb
